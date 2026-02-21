@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 function MovieMenu({ onBack }) {
   const movies = [
@@ -10,10 +11,9 @@ function MovieMenu({ onBack }) {
   return (
     <div className="min-h-screen bg-background-dark text-white p-8 font-display">
       {/* Header */}
-      <div className="flex justify-between items-center max-w-7xl mx-auto mb-12">
-        <div className="flex items-center gap-2">
-          <span className="material-symbols-outlined text-primary">hive</span>
-          <span className="font-bold tracking-widest uppercase">Auralytix</span>
+      <div className="w-full pl-2 pr-6 md:pl-4 md:pr-12 flex justify-between items-center max-w-7xl mx-auto mb-12">
+        <div className="flex items-center select-none">
+          <img src={logo} alt="Auralytix Logo" className="h-24 md:h-24 drop-shadow-[0_0_8px_rgba(0,243,255,0.4)]" />
         </div>
         <button onClick={onBack} className="flex items-center gap-2 text-xs text-slate-400 hover:text-primary transition-colors">
           <span className="material-symbols-outlined text-sm">arrow_back</span> BACK TO HOME

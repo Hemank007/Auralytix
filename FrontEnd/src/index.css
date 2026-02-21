@@ -51,3 +51,30 @@
     background-color: #00f3ff;
     color: #000;
 }
+/* --- CUSTOM AURALYTIX SCROLLBAR --- */
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #0df2f2 #000000;
+}
+
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 8px; /* Makes the scrollbar sleek and thin */
+}
+
+::-webkit-scrollbar-track {
+    background: #000000; /* Blends into your dark background */
+    border-left: 1px solid rgba(0, 243, 255, 0.1); /* Subtle glass border */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0df2f2; /* Your primary Cyber-Teal */
+    border-radius: 10px; /* Rounds the edges */
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00b8c2; /* Dims slightly when you hover over it */
+}

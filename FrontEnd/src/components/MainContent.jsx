@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 // We add onDiscoverMusic here so the component can receive the instruction
 function MainContent({ onFindMovies, onDiscoverMusic }) {
@@ -6,15 +7,9 @@ function MainContent({ onFindMovies, onDiscoverMusic }) {
     <div className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased overflow-x-hidden min-h-screen flex flex-col">
       <div className="fixed inset-0 pointer-events-none ambient-bg z-0"></div>
       <div className="relative z-10 flex flex-col min-h-screen w-full">
-        <header className="w-full px-6 py-6 md:px-12 flex justify-between items-center">
-          <div className="flex items-center gap-3 select-none group">
-            <div className="size-8 rounded-lg flex items-center justify-center text-primary relative">
-              <div className="absolute inset-0 bg-primary/20 blur-md rounded-lg group-hover:bg-primary/40 transition-all"></div>
-              <span className="material-symbols-outlined text-2xl relative z-10 drop-shadow-[0_0_8px_rgba(0,243,255,0.8)]">auto_awesome</span>
-            </div>
-            <h1 className="text-2xl font-bold tracking-widest-custom text-slate-900 dark:text-white uppercase">
-              Auralytix
-            </h1>
+        <header className="w-full pl-2 px-6 py-6 md:px-12 md:pl-2 flex justify-between items-center">
+          <div className="flex items-center select-none">
+            <img src={logo} alt="Auralytix Logo" className="h-24 md:h-24 drop-shadow-[0_0_8px_rgba(0,243,255,0.4)]" />
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <a className="text-xs font-semibold tracking-widest uppercase text-slate-500 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>

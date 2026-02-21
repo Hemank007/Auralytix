@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 function MusicMenu({ onBack }) {
   const tracks = [
@@ -14,10 +15,9 @@ function MusicMenu({ onBack }) {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full -mr-64 -mt-64"></div>
       
       {/* Header */}
-      <header className="relative z-10 w-full px-8 py-6 flex justify-between items-center">
-        <div className="flex items-center gap-3">
-          <span className="material-symbols-outlined text-primary text-3xl">graphic_eq</span>
-          <h1 className="text-xl font-bold tracking-[0.2em] uppercase">Auralytix</h1>
+      <header className="relative z-10 w-full pl-2 pr-6 py-6 md:pl-4 md:pr-12 flex justify-between items-center">
+        <div className="flex items-center select-none">
+          <img src={logo} alt="Auralytix Logo" className="h-24 md:h-24 drop-shadow-[0_0_8px_rgba(0,243,255,0.4)]" />
         </div>
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-2 px-3 py-1 border border-primary/30 rounded-full bg-primary/5">
